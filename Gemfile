@@ -39,7 +39,10 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 
-gem 'bootstrap-sass'
+#gem 'bootstrap-sass'
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
+
 gem 'devise'
 gem 'devise_invitable'
 gem 'mysql2'
@@ -82,3 +85,4 @@ group :test do
   gem 'selenium-webdriver'
 end
 
+gem 'friendly_id', '~> 5.0.0' 

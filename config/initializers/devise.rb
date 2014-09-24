@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = 'acbc12f071929d9e75449b2b33c4f8c76e667ee0e569dd5e756afac4d6e5d70163ebf7f00313c654a8bcd2717a3a50619b0f81690d5a98bdf0d272e310cb4d96'
+  # config.secret_key = '1ab4419c2d63ae5d5a6e2d77452649c35431deefaf06c34cda90ec9140ca0cada8aab9fe68286420aaefc060c36d174697b95408398c575338791e13b817db11'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -97,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '2a1d10a9f6c3c3f3c3981d13de24dc0c8ce1fc4a607d617487ba2ea67b13aa482f742ab4d9a53ade50fe5202a9fc59e2154734671802ae2dbaba2c504e95841d'
+  # config.pepper = '990c199a04e295f2f35ab89d5260033a5294921baf529435a93b4c79329fb6be8e0ba9ed0b1b886eadee551caa317e86fae55b302099f13c294b8f9f3ce16643'
 
   # ==> Configuration for :invitable
   # The period the generated invitation token is valid, after
@@ -266,7 +266,7 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :delete
+  config.sign_out_via = :get
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
