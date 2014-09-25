@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140924122139) do
+ActiveRecord::Schema.define(version: 20140925122212) do
 
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
@@ -33,6 +33,15 @@ ActiveRecord::Schema.define(version: 20140924122139) do
     t.text     "description"
     t.integer  "public_access_id", default: 1
     t.boolean  "is_active",        default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sports", force: true do |t|
+    t.string   "name"
+    t.string   "slug"
+    t.string   "description"
+    t.boolean  "is_active",   default: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
